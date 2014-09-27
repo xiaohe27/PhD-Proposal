@@ -1,0 +1,25 @@
+Preparation: n processors in RING topology (indexed from 0 to n-1)
+            are ready for analyzing the property P of the log file.
+
+
+Step 1: get the length of the single log file, say L
+
+Step 2: divide the total length by the number of processors,
+	Processor i will be responsible for analyzing the range [L/n * i, L/n * (i+1))
+
+Step 3 (Criticle Local Computation for task decomposition):
+		Each processor i (0<i<n, i.e. every processor except processor 0) do:
+			Start from the beginning of the its partition, and try to find a seqence of events that
+			match the property P in complete form. Record the starting index of that complete match, denote it as 'f_i'.
+			Update its own starting point to 'f_i', and also transmit 'f_i' to its left neighbor (i.e. processor i-1),
+			so that processor i-1 can update its ending index to 'f_i'.
+
+Step 4: Each processor does the analysis of the log file independently using the best serial algorithm.
+
+Step 5: Merge the output to a single destination?
+or simply keep the results locally (maybe the latter is a good idea if the data needed to be transmitted is very huge).
+
+
+P.S: The multiple processors are not necessarily in ring architecture physically. There are
+ well-known algorithms for the mappings between different topologies so that the communication
+ overheads can be minimized.

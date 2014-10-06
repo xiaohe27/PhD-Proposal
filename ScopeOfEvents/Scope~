@@ -29,5 +29,27 @@ The effect of i.hasNext() should only be within the 'then' block. It has nothing
 
 Proposal: make the implementation of javamop closer to the theory of MOP.
 
-Only update the status of monitor if the hasNext() returns true. This idea has already been specified by the paper.
+Only update the status of monitor if the hasNext() returns true. This idea has already been specified by the paper,
 it is strange that why it has not been implemented.
+
+
+Currently, the program below:
+
+import java.util.*;
+
+public class HasNext_4 {
+    public static void main(String[] args){
+        Vector<Integer> v = new Vector<Integer>();
+        
+        
+        Iterator i = v.iterator();
+        int sum = 0;
+        
+        if(i.hasNext()){}
+	else{}
+
+        sum += (Integer)i.next();	          
+             
+        System.out.println("sum: " + sum);
+    }
+}

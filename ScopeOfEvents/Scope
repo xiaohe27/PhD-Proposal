@@ -1,0 +1,28 @@
+Currently, whenever some events are triggered, the status of the monitor will be updated permanently!
+
+Consider the code:
+
+ Vector<Integer> v = new Vector<Integer>();
+   
+        Iterator i = v.iterator();
+        int sum = 0;
+        
+        i.hasNext();
+
+	
+	sum += (Integer)i.next();            
+	
+        
+        System.out.println("sum: " + sum);
+
+
+Although hasNext() is called before next(), it does not provide any useful info w.r.t the environment when we execute 'next()' method.
+
+The current implementation of javamop seems only care whether some hasNext method is called before calling next() method, but does not 
+
+consider the scope of hasNext() event. 
+
+E.g. if(i.hasNext()){...}
+	i.next();
+
+The effect of i.hasNext() should only be within the 'then' block. It has nothing to do with code outside of that block!

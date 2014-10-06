@@ -26,3 +26,8 @@ E.g. if(i.hasNext()){...}
 	i.next();
 
 The effect of i.hasNext() should only be within the 'then' block. It has nothing to do with code outside of that block!
+
+Proposal: make the implementation of javamop closer to the theory of MOP.
+
+Only update the status of monitor if the hasNext() returns true. This idea has already been specified by the paper,
+it is strange that why it has not been implemented.

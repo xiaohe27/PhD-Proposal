@@ -1,0 +1,9 @@
+If the system has a mechanism that somebody is ware of the access of topics,
+then we can maintain a topic called 'usageOfTopics' which has only one message in it.
+The monitoring of the system can then be transformed to monitoring the msgLog.
+
+Two tables called 'publisherLog' and 'subscriberLog' are encoded. Each time a node is sending or
+receiving msg, it will update the msg log topic (maybe one msgLog topic per node is better).
+
+The monitor node can subscribe every node's msgLog topic and gather infor from them to form the overall table.
+By analyzing the big table, we can easily know which node is not working properly. 

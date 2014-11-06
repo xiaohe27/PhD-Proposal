@@ -1,0 +1,30 @@
+Current Health monitor cannot tell differernces between two problems which are caused by different reasons.
+
+Common background:
+Topic 1 with publisher node B;
+Subscriber of Topic 1 is node A
+
+Topic 2 with publisher node C
+Subscriber of Topic 2 is node B
+
+
+Health related topics as usual
+Health monitor: M
+
+
+
+Scenario 1: B dies. Therefore topic 1 is not updated.
+The mailbox is always the old mail, and therefore labelled by subscriber A as time-out.
+A sends the time-out flag with the heartbeat msg to the health monitor M.
+
+Scenario 2: B alives and it publishes to topic 1 normally.
+However, node C died and msg of topic 2 time-out. B is the subscriber of topic 2,
+because the input msg is not good, therefore, dueo to the default error-propagation mechanism of
+RADL, it will also label its msg which will be published to topic 1 as time-out.
+Even though the msg from node B is fresh, but its flag is set to time-out. A just uses this flag 
+inside its heartbeat msg.
+
+The monitor node cannot distinguish between these two scenarios. Their symptoms are similar (A sends heartbeat msg with time-out flag to M)
+but the causes are different.
+
+

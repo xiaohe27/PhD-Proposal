@@ -1,0 +1,14 @@
+Proposed method:
+Associate with each topic a number (known by every node. computable from the topic id. ).
+Function topicID --> topicMagicNumber
+Each node maintains a boolean var representing whether the last msg from a given topic is fresh or not.
+
+For example, there are 3 topics. Then we label them as 1, 2, and 4 respectively.
+
+Each time a subscriber checks the incoming msg from, say, topic 1, if after comparing the timestamp, a time-out is found,
+then the boolean var for that topic is set to false. otherwise, it is set to true. (This distinguishes the circumstance of receiving fresh msg
+with flag time-out and not receiving any new msg)
+
+For the heartbeat msg sent to the monitor node, a node simply adds the magic numbers of all its subscribed topics together and sends the sum to the monitor.
+
+The monitor can then decode the sum to an array of magic numbers so that it will know which topics subscribed by the node are updated in time, and which are not.

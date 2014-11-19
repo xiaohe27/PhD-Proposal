@@ -1,0 +1,48 @@
+Version 1.1.2
+-------------
+- Performance improvement in the evaluation of subformulas of the form
+phi AND psi, where the free variables of phi are form a subset of the
+free variables of psi.
+
+- An accompanying translation from MFOTL formulas to SQL queries.
+
+Version 1.1.1
+-------------
+- Small bug fixes.
+
+Version 1.1.0
+-------------
+- Implemented two log filters which filter tuples and empty time
+  points based on the input formula
+
+- Implemented a new algorithm to incrementally compute the satisfying
+  tuples for temporal subformulas (see the Sliding module)
+
+- Relation.minus is now computed as an anti-join instead of a
+  equi-join follows by a set difference.
+
+- Improvement in computing the satisfying tuples for some temporal
+  subformulas, by merging time-points with equal time-stamps.
+
+- Signature files should now contain both variable names and
+  corresponding types.
+
+- Saving and loading the monitor state currently disabled.
+
+- Minor bug fixes.
+
+
+Version 1.0.1
+-------------
+- Minor bug fix.
+
+- Added an example (the more complex policy from the RV'11 tool
+  paper).
+
+- Empty relations accepted in the log files.
+
+
+Version 1.0.0
+-------------
+First release.
+

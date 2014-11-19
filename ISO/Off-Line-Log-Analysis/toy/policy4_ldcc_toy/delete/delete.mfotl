@@ -1,0 +1,1 @@
+delete(?user,db2,?data) IMPLIES ?user EQ script2

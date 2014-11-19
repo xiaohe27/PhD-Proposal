@@ -1,0 +1,8 @@
+@1307532861 	insert(user,db2,200)
+@1307955600 	insert(script1,db2,999)
+		insert(script2,db2,888)
+
+@1307955602 	insert(script1,db2,777)
+@1307955604 	insert(xh,db3,777)
+		insert(yuwen,db2,777)
+ 		insert(xgy,db2,777)

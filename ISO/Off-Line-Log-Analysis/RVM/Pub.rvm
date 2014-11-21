@@ -1,0 +1,21 @@
+package rvm;
+
+Pub(Integer report) {
+  Integer report;
+  int time;
+
+  event publish (Integer report, int time) {
+		this.report=report;
+		this.time=time;		
+	} 
+
+  event approve (Integer report, int time) {
+		this.report=report;
+		this.time=time;		
+	}
+
+  ltl: [](publish => (*) approve)
+
+  @violation { System.out.println("should not publish financial report "+this.report+" without pre-approval");}
+ 
+}

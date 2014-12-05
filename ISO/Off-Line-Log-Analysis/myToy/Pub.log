@@ -1,9 +1,9 @@
- @0 approve (2, a) 
+@0 approve (2, a) 
 publish(7,org1)
 
 @1 approve (3,b)
 
-@5 publish (3,org2)(9,org2)(2,org1)
+@5 publish (3,org2)(9,org1)(77,org1)
 approve (9,a) (77, c)
 
 @6 publish (22, org99)

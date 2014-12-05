@@ -1,2 +1,4 @@
-(publish(?r,?org) IMPLIES
-ONCE EXISTS ?m. (approve(?r, ?m)) )
+publish(?r,?org) IMPLIES
+ONCE EXISTS ?m. (approve(?r, ?m) AND (( (?m = a) AND ?org = org1) 
+			OR (?m = b AND ?org = org2)  ) )
+

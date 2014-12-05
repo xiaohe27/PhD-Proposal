@@ -1,2 +1,0 @@
-(publish(?r, org1) IMPLIES ONCE approve(?r,b)) AND  (publish(?r, org2) IMPLIES ONCE approve(?r,a)) 
-

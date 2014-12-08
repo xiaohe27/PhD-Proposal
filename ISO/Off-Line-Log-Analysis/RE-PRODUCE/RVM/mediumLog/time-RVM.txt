@@ -1,0 +1,4 @@
+Start time : 1418076001
+Finish time : 1418076288
+
+It took 287 seconds to analyze the insert property of the 9M lines log ldcc4Monpoly

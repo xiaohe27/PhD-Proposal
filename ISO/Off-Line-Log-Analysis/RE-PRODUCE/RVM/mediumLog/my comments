@@ -1,0 +1,3 @@
+For the simple property like this, using state machines is overkilling.
+Besides: using reflection can result in a considerable overheads!
+

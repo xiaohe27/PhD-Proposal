@@ -1,0 +1,11 @@
+Monpoly:
+Start time : 1418762961
+Finish time : 1418763569
+
+It took 608 seconds to retrieve all the insert events in the 9M log ldcc4Monpoly
+
+My LogAnalyzer:
+Start time : 1418858971
+Finish time : 1418859621
+
+It took 650 seconds to retrieve all the insert events in the 9M log ldcc4Monpoly

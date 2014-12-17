@@ -1,0 +1,1 @@
+insert(?user,db2, ?p ,?data) IMPLIES (?user = script1)

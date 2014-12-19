@@ -1,0 +1,10 @@
+1. Read all events line by line: No lexing and parsing
+
+7 seconds.
+
+
+With lexing and parsing, no further analysis or manipulation and no output:
+Start time : 1419006695
+Finish time : 1419006945
+
+It took 250 seconds to read all the events in the 9M log ldcc4Monpoly using my regex

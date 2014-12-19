@@ -1,0 +1,2 @@
+
+It took grep 2339 milliseconds to read all the insert events in the log

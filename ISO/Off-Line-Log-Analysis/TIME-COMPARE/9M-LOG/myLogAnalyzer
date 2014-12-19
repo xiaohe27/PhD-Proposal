@@ -8,3 +8,10 @@ Start time : 1419006695
 Finish time : 1419006945
 
 It took 250 seconds to read all the events in the 9M log ldcc4Monpoly using my regex
+
+
+Using ASCII as input enconding:
+Start time : 1419008582
+Finish time : 1419008820
+
+It took 238 seconds to read all the events in the 9M log ldcc4Monpoly using my regex

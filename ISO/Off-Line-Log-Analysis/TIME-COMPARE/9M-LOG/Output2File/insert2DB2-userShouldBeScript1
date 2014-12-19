@@ -1,0 +1,22 @@
+Monpoly:
+Start time : 1418917145
+Finish time : 1418917181
+
+It took 36 seconds to analyze insert events for db2 in the 9M log ldcc4Monpoly
+
+
+====================================================================================
+My log analyzer:
+Start time : 1418917464
+Finish time : 1418917804
+
+It took 340 seconds to retrieve all the insert events in the 9M log ldcc4Monpoly
+
+*** If do not output anything and do not invoke rvm via reflection:
+Start time : 1418925381
+Finish time : 1418925636
+
+It took 255 seconds to retrieve all the insert events in the 9M log ldcc4Monpoly
+
+
+

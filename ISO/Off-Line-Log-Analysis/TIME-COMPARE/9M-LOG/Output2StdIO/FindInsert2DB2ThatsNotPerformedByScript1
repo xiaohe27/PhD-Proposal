@@ -1,0 +1,12 @@
+Monpoly:
+Start time : 1418916570
+Finish time : 1418916821
+
+It took 251 seconds to analyze insert events for db2 in the 9M log ldcc4Monpoly
+
+
+My log analyzer:
+Start time : 1418860943
+Finish time : 1418861287
+
+It took 344 seconds to retrieve all the insert events in the 9M log ldcc4Monpoly

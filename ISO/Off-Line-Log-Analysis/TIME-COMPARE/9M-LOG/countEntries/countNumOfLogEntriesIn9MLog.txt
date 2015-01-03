@@ -1,0 +1,1 @@
+There are 89961 log entries in the log file!

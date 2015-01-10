@@ -1,0 +1,5 @@
+Start time : 1420750020
+There are 89961 log entries in the log file!-e 
+Finish time : 1420750154
+-e 
+It took 134 seconds to count the number of log entries in the 9M log file!

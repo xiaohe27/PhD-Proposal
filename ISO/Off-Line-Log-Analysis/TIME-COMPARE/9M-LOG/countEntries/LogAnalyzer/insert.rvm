@@ -1,0 +1,19 @@
+package rvm;
+
+  Insert() {
+
+  event insert (String user,String db,String p,String data, long time) {
+
+		if(db.equals("db2"))
+		{
+		if(user.equals("script1")) {}
+		else{
+		    System.out.println("@"+time+" User "+user+" insert to db2 the data: "+data);
+		    return;
+		}
+		}
+
+		else{}
+	}
+
+}

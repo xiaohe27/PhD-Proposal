@@ -15,3 +15,12 @@ Start time : 1419008582
 Finish time : 1419008820
 
 It took 238 seconds to read all the events in the 9M log ldcc4Monpoly using my regex
+
+
+==========================================================
+After optimization
+
+Start time : 1420886850
+Finish time : 1420886887
+
+It took my log analyzer 37 seconds to retrieve all the insert events in the 9M log ldcc4Monpoly

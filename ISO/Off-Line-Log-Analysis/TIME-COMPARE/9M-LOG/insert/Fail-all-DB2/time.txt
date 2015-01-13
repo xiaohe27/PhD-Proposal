@@ -1,0 +1,4 @@
+Start time : 1420939181
+Finish time : 1420939217
+
+It took 36 seconds to output the insert 2 db2 events in the 9M log file!

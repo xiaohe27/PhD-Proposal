@@ -1,0 +1,1 @@
+insert(?user, MYDB, ?p ,?data) IMPLIES (?user = notARealUserInTheDB)

@@ -1,0 +1,5 @@
+Start time : 1420915551
+There are 89961 log entries in the log file!
+Finish time : 1420915791
+
+It took Monpoly-c (compiled by ocamlc) 240 seconds to count the number of log entries in the 9M log file!

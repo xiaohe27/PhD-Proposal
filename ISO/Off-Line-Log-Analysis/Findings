@@ -1,0 +1,6 @@
+Monpoly:
+for each log entry, parse and then monitor
+
+NOT wholly parse before interpreting
+
+parse one entry and then interpret one entry?

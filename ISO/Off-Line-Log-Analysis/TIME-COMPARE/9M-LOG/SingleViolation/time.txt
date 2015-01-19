@@ -1,0 +1,6 @@
+Start time : 1421337624
+@1277857421 (time-point 93148): (ARealUserInTheDB,104,73414887)
+
+Finish time : 1421337658
+
+It took Monpoly (opt) 34 seconds to find the single violation (the last entry) in the 9M log file!

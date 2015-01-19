@@ -1,9 +1,10 @@
+Out=time$1.txt
 Start=$(date +"%s")
-echo "Start time : $Start" > time.txt
+echo "Start time : $Start" > $Out
 
-/home/xiaohe/SW/offline-log-analysis/existingApp/monpoly-1.1.2/monpoly -sig insert.sig -formula insert.mfotl -negate -log /home/xiaohe/workspace/DATA/MeasureBaseTime/ldcc4Monpoly_buggy
+/home/xiaohe/SW/offline-log-analysis/existingApp/monpoly-1.1.2/monpoly -sig insert.sig -formula insert.mfotl -negate -log /home/xiaohe/workspace/DATA/MeasureBaseTime/ldcc4Monpoly_buggy >> $Out
 
 End=$(date +"%s")
-echo "Finish time : $End" >> time.txt
+echo "Finish time : $End" >> $Out
 Diff=$(( $End - $Start ))
-echo "\nIt took Monpoly (opt) $Diff seconds to parse all the events in the 9M log file!" >> time.txt
+echo "\nIt took Monpoly (opt) $Diff seconds to parse all the events in the 9M log file!" >> $Out

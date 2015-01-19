@@ -1,0 +1,5 @@
+Start time : 1421603648
+@1277857421 (time-point 93148): (ARealUserInTheDB,104,73414889)
+Finish time : 1421603667
+
+It took Monpoly (opt) 19 seconds to parse all the events in the 9M log file!

@@ -1,4 +1,0 @@
-Start time : 1421275073
-Finish time : 1421275091
-
-It took Monpoly (opt) 18 seconds to parse all the events in the 9M log file!

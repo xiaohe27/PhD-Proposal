@@ -1,0 +1,1 @@
+script_md5 (MY_Script,?md5) IMPLIES (?md5 = ItsMD5)
